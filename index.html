@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Page Title</title>
+    <title>Andy Blog</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -15,6 +15,7 @@
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script>
       function showNavMenu() {
         var x = document.getElementById('navbar');
@@ -46,8 +47,7 @@
       </a>
     </div>
     <hr />
-
-    <!-- The flexible grid (content) -->
+    <!-- content -->
     <div class="row">
       <!-- MAIN -->
       <div class="main">
@@ -67,53 +67,68 @@
         </article>
 
         <br />
-        <article class="news">
-          <h2>TITLE HEADING</h2>
-          <h5>Title description, Feb 14, 2019</h5>
-          <div class="news-img">
-            <img src="./img/noteCode.jpg" alt="laptop" />
-          </div>
-          <p>Lorem ipsum dolor sit.</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae!
-          </p>
-        </article>
-
+        <div
+          data-aos="fade-up"
+          data-aos-duration="700"
+          data-aos-anchor-placement="top-bottom"
+        >
+          <article class="news">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Feb 14, 2019</h5>
+            <div class="news-img">
+              <img src="./img/noteCode.jpg" alt="laptop" />
+            </div>
+            <p>Lorem ipsum dolor sit.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae!
+            </p>
+          </article>
+        </div>
         <br />
 
-        <article class="news">
-          <h2>TITLE HEADING</h2>
-          <h5>Title description, Feb 14, 2019</h5>
-          <div class="news-img">
-            <img src="./img/beer.jpg" alt="laptop" />
-          </div>
-          <p>Some text..</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-            provident tempora ad. Sunt itaque consequatur porro id aperiam sed
-            explicabo? Odit optio accusamus itaque eaque voluptas non impedit
-            reiciendis! Explicabo sit minima a modi quas laudantium rem quod
-            rerum? Maxime perferendis cum autem adipisci quo. Quia quisquam non
-            dignissimos obcaecati?
-          </p>
-        </article>
-
+        <div
+          data-aos="fade-up"
+          data-aos-duration="700"
+          data-aos-anchor-placement="top-bottom"
+        >
+          <article class="news">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Feb 14, 2019</h5>
+            <div class="news-img">
+              <img src="./img/beer.jpg" alt="laptop" />
+            </div>
+            <p>Some text..</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+              provident tempora ad. Sunt itaque consequatur porro id aperiam sed
+              explicabo? Odit optio accusamus itaque eaque voluptas non impedit
+              reiciendis! Explicabo sit minima a modi quas laudantium rem quod
+              rerum? Maxime perferendis cum autem adipisci quo. Quia quisquam
+              non dignissimos obcaecati?
+            </p>
+          </article>
+        </div>
         <br />
-
-        <article class="news">
-          <h2>TITLE HEADING</h2>
-          <h5>Title description, Feb 14, 2019</h5>
-          <div class="news-img">
-            <img src="./img/work.jpg" alt="laptop" />
-          </div>
-          <p>Some text..</p>
-          <p>
-            Sunt in culpa qui officia deserunt mollit anim id est laborum
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco.
-          </p>
-        </article>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="700"
+          data-aos-anchor-placement="top-bottom"
+        >
+          <article class="news">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Feb 14, 2019</h5>
+            <div class="news-img">
+              <img src="./img/work.jpg" alt="laptop" />
+            </div>
+            <p>Some text..</p>
+            <p>
+              Sunt in culpa qui officia deserunt mollit anim id est laborum
+              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+              nostrud exercitation ullamco.
+            </p>
+          </article>
+        </div>
       </div>
       <!-- SIDE -->
       <div id="side">
@@ -130,70 +145,84 @@
           rem corrupti magni, soluta fugiat obcaecati!..
         </p>
         <br />
-        <h3>Lorem, ipsum dolor.</h3>
-        <div class="side-img"><img src="./img/team.jpg" alt="" /></div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolorem
-          consequuntur nemo ullam sed consequatur rerum similique saepe alias.
-          Incidunt sunt beatae id, recusandae laudantium labore deleniti qui
-          accusamus quos. Officia, quibusdam assumenda rem sequi veritatis non
-          doloribus quas porro obcaecati accusantium saepe corrupti quasi. Atque
-          laboriosam non possimus itaque..
-        </p>
+        <div
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-anchor-placement="center-bottom"
+        >
+          <h3>Lorem, ipsum dolor.</h3>
+          <div class="side-img"><img src="./img/team.jpg" alt="" /></div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+            dolorem consequuntur nemo ullam sed consequatur rerum similique
+            saepe alias. Incidunt sunt beatae id, recusandae laudantium labore
+            deleniti qui accusamus quos. Officia, quibusdam assumenda rem sequi
+            veritatis non doloribus quas porro obcaecati accusantium saepe
+            corrupti quasi. Atque laboriosam non possimus itaque..
+          </p>
+        </div>
       </div>
     </div>
 
     <!-- Footer -->
     <div id="footer">
-      <div id="f-submit">
-        <h2>Подписаться на рассылку новостей</h2>
-        <div class="form-group">
-          <input
-            type="email"
-            id="email"
-            placeholder="Введите ваш Email адрес"
-          />
-          <button type="submit">Отправить</button>
+      <div data-aos="zoom-in" data-aos-duration="1000">
+        <div id="f-submit">
+          <h2>Подписаться на рассылку новостей</h2>
+          <div class="form-group">
+            <input
+              type="email"
+              id="email"
+              placeholder="Введите ваш Email адрес"
+            />
+            <button type="submit">Отправить</button>
+          </div>
         </div>
       </div>
-      <div id="f-info">
-        <div class="f-logo">
-          <h1>Andy Blog</h1>
-        </div>
-        <div class="f-menu">
-          <h2>MENU</h2>
-          <ul>
-            <li>
-              <a href="#"><i class="fas-li fa fa-home"></i>Home</a>
-            </li>
-            <li>
-              <a href="#"><i class="fas-li fa fa-info-circle"></i>About</a>
-            </li>
-            <li>
-              <a href="#"><i class="fas-li fab fa-hotjar"></i>Hot</a>
-            </li>
-            <li>
-              <a href="#"
-                ><i class="fas-li fas fa-project-diagram"></i> Projects</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="f-contact">
-          <h2>CONTACT</h2>
-          <ul>
-            <li>
-              <a href="#"><i class="fa fa-mobile-alt"></i>Phone</a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-map-marker-alt"></i>Address</a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-at"></i>Email</a>
-            </li>
-          </ul>
+      <div data-aos="zoom-out" data-aos-duration="1000">
+        <div id="f-info">
+          <div class="f-logo">
+            <h1>Andy Blog</h1>
+          </div>
+          <div class="f-menu">
+            <h2>MENU</h2>
+            <ul>
+              <li>
+                <a href="#"><i class="fas-li fa fa-home"></i>Home</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas-li fa fa-info-circle"></i>About</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas-li fab fa-hotjar"></i>Hot</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas-li fas fa-project-diagram"></i> Projects</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="f-contact">
+            <h2>CONTACT</h2>
+            <ul>
+              <li>
+                <a href="#"><i class="fa fa-mobile-alt"></i>Phone</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-map-marker-alt"></i>Address</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-at"></i>Email</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
