@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: "Roboto Slab", serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #444;
+  color: white;
+  /* line-height: 1.5rem; */
+  letter-spacing: 0.3rem;
+}
+#logo h1.animated {
+  position: relative;
+  animation-name: shift-h1;
+  animation-duration: 0.5s;
+}
+#logo p.animated {
+  position: relative;
+  animation-name: shift-p;
+  animation-duration: 1s;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #666;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: #ddd;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar a.active {
+  color: #ffffff;
+  border-bottom: 2px solid #fff;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #555;
+  color: fff;
+}
+
+hr {
+  border: 0.09em solid #666; /* Убираем границу для браузера Firefox */
+  color: #666; /* Цвет линии для остальных браузеров */
+  background-color: #666;
+  height: 1px; /* Толщина линии */
+  padding: 0;
+  margin: 0;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px 20px 20px 90px;
+}
+
+.main-img {
+  width: 94%;
+  max-height: 500px;
+  /* padding: 20px; */
+  padding-right: 20px;
+  margin: 10px;
+}
+.main-img img {
+  width: 100%;
+  max-height: 500px;
+  border: none;
+  /* margin: auto; */
+  display: block;
+  overflow: hidden;
+}
+.side-img {
+  width: 100%;
+  /* padding: 20px; */
+  margin-bottom: 1%;
+  height: auto;
+  overflow: hidden;
+}
+
+.side-img img {
+  border-radius: 10%;
+  width: 100%;
+  border: 2px solid #333;
+  margin: auto;
+  display: block;
+  overflow: hidden;
+}
+
+/* Footer */
+.footer {
+  padding: 0;
+  margin: 0;
+}
+
+.f-submit {
+  padding: 50px;
+  text-align: center;
+  background: #333;
+  color: white;
+  /* line-height: 1.5rem; */
+  letter-spacing: 0.3rem;
+}
+.f-info {
+  color: #fff;
+  background: #555;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+@keyframes shift-h1 {
+  0% {
+    left: -1000px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@keyframes shift-p {
+  0% {
+    right: -1000px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row,
+  .navbar {
+    flex-direction: column;
+  }
+}
