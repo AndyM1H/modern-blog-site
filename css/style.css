@@ -40,6 +40,7 @@ body {
 /* Header/logo Title */
 #header {
   background: url('../img/bground.jpg') no-repeat center center/cover;
+  /* background: #eee; */
   padding: 60px;
   text-align: center;
   font-size: 32px;
@@ -48,7 +49,6 @@ body {
   line-height: 5rem;
   letter-spacing: 0.3rem;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.4);
   top: 0;
   opacity: 0;
   animation: fadeIn ease 1s 0.7s forwards;
@@ -249,7 +249,7 @@ hr {
 #f-info {
   display: flex;
   color: #333;
-  background: #bbb;
+  background: #eee;
   padding: 14px 20px;
   text-decoration: none;
   text-align: left;
