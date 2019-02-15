@@ -1,9 +1,16 @@
 # modern-blog-site
 
 my blog site
+<hr />
+<p align="center">
+PC preview
 
+<img src="/preview/PCn.gif?" width="800px"> 
+</p>
+<hr />
+<p align="center">
+Mobile preview<br>
 
-![Mobile](https://i.imgur.com/QfWvyCB.gif)
+<img src="/preview/Mobilen.gif" width="300px">
+</p>
 
-
-![PC](https://i.imgur.com/UX83CO7.gif)
