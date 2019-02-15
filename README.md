@@ -4,7 +4,7 @@ my blog site
 <hr />
 <p align="center">
 PC preview
-
+<br>
 <img src="/preview/PCn.gif?" width="800px"> 
 </p>
 <hr />
