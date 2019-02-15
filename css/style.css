@@ -9,7 +9,7 @@ body {
   font-family: 'Roboto Slab', serif;
   letter-spacing: 0.1rem;
   line-height: 1.8em;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 .fa {
@@ -310,6 +310,7 @@ hr {
 .f-contact li {
   list-style: none;
 }
+
 @keyframes fadeIn {
   from {
     opacity: 0;
