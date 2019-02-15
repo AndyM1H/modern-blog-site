@@ -9,7 +9,7 @@ body {
   font-family: 'Roboto Slab', serif;
   letter-spacing: 0.1rem;
   line-height: 1.8em;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .fa {
@@ -223,6 +223,7 @@ hr {
 #footer {
   padding: 0;
   margin: 0;
+  overflow: hidden;
 }
 
 #f-submit {
