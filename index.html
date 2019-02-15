@@ -16,18 +16,10 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script>
-      function showNavMenu() {
-        var x = document.getElementById('navbar');
-        if (x.className != 'responsive') {
-          x.className = 'responsive';
-        } else {
-          x.className -= 'responsive';
-        }
-      }
-    </script>
+    <script src="./js/responsiveNavbar.js"></script>
+    <script src="./js/stickyNavbar.js"></script>
   </head>
-  <body>
+  <body onscroll="makeNavbarOpacity()">
     <!-- Header -->
     <div id="header">
       <div class="logo">
@@ -37,7 +29,7 @@
     </div>
 
     <!-- Navigation Bar -->
-    <div id="navbar">
+    <div id="navbar" class="">
       <a class="active" href="#">Home</a>
       <a href="#">Hot</a>
       <a href="#">Projects</a>
