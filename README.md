@@ -2,8 +2,8 @@
 
 my blog site
 
-Mobile version preview: 
-![](https://i.imgur.com/QfWvyCB.gif)
 
-PC version preview: 
-![](https://i.imgur.com/UX83CO7.gif)
+![Mobile](https://i.imgur.com/QfWvyCB.gif)
+
+
+![PC](https://i.imgur.com/UX83CO7.gif)
