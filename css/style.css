@@ -72,11 +72,32 @@ body {
 #navbar {
   display: flex;
   justify-content: center;
-  background-color: #e2e2e2;
+  background: #e2e2e2;
   position: sticky;
+  top: 0;
+  z-index: 1;
   overflow: hidden;
   opacity: 0;
   animation: fadeInLeft ease 1s 0.5s forwards;
+  animation-iteration-count: 1;
+  transition: background ease 0.3s;
+}
+
+#navbar.sticky {
+  display: flex;
+  background: rgba(0, 0, 0, 0.4);
+  transform: scale(2, 3);
+  transition: all ease 0.3s;
+}
+#navbar.sticky a {
+  color: #ddd;
+  transform: scale(0.7, 0.9);
+}
+#navbar.sticky a.active {
+  color: #fff;
+}
+#navbar.sticky a:hover {
+  color: #111;
 }
 
 /* Style the navigation bar links */
@@ -339,6 +360,7 @@ matrix() */
     transform: translateX(0);
   }
 }
+
 /* Responsive layout - when the screen is less than 768px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 768px) {
   .row {
@@ -399,6 +421,7 @@ matrix() */
   #navbar {
     justify-content: space-between;
     padding: 2px 20px;
+    position: relative;
   }
 
   #navbar a:not(:first-child) {
@@ -417,9 +440,11 @@ matrix() */
 
   #navbar.responsive {
     position: relative;
+    justify-content: space-between;
     flex-direction: column;
     transition: all 0.5s ease-out;
   }
+
   #navbar.responsive a.icon {
     position: absolute;
     text-align: right;
