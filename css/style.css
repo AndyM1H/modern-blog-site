@@ -6,10 +6,17 @@
 
 /* Style the body */
 body {
-  font-family: 'Roboto Slab', serif;
-  letter-spacing: 0.1rem;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.2rem;
   line-height: 1.8em;
   overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Roboto Slab', serif;
 }
 
 .fa {
@@ -39,9 +46,10 @@ body {
 
 /* Header/logo Title */
 #header {
-  background: url('../img/bground.jpg') no-repeat center center/cover;
+  background: #333 url('../img/bground.jpg') no-repeat center center/cover;
   /* background: #eee; */
-  padding: 60px;
+  height: 30vh;
+  /* padding: 60px; */
   text-align: center;
   font-size: 32px;
   /* background: #444; */
@@ -54,17 +62,24 @@ body {
   animation: fadeIn ease 1s 0.7s forwards;
 }
 
+.logo {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .logo h1.animated {
   position: relative;
   overflow: hidden;
-  left: -3000px;
+  /* left: -3000px; */
   animation: shiftLeft ease 1.2s forwards;
 }
 
 .logo p.animated {
   position: relative;
   overflow: hidden;
-  right: -3000px;
+  /* right: -3000px; */
   animation: shiftRight ease 1.4s forwards;
 }
 
@@ -185,6 +200,7 @@ hr {
   padding: 30px 20px 10px 150px;
   text-align: justify;
   overflow: hidden;
+  /* justify-content: center; */
 }
 
 .news {
@@ -195,10 +211,10 @@ hr {
   animation: fadeIn ease 0.9s 1.3s forwards;
 }
 .news-img {
-  width: 94%;
+  width: 90%;
   max-height: 650px;
   overflow: hidden;
-  /* padding: 20px; */
+  border-radius: 2%;
   padding-right: 0px;
 }
 .news-img img {
@@ -217,7 +233,8 @@ hr {
 }
 
 .news h5 {
-  font-size: 16px;
+  color: #aaa;
+  font-size: 0.8rem;
   margin: 15px;
 }
 
@@ -242,34 +259,49 @@ hr {
   margin: 10px;
   display: flex;
   justify-content: center;
-  max-height: 50px;
+  /* max-height: 50px; */
 }
 .form-group input {
   padding: 13px 15px;
-  width: 33%;
-  margin: 0px 8px;
+  width: 70%;
+  /* margin: 0px 8px; */
   border: none;
-  border-radius: 20px;
+  /* border-radius: 20px; */
+  border-top-left-radius: 1.3rem;
+  border-bottom-left-radius: 1.3rem;
   min-height: 40px;
-  min-width: 200px;
+  /* min-width: 200px; */
+  max-width: 470px;
 }
 .form-group button {
   padding: 8px 13px;
   color: #fff;
-  background: #e03448;
-  /* or green? :) */
-  /* background: #60b864; */
+  /* background: #e03448; */
+  background: linear-gradient(to bottom, #e03448, #f08306);
   border: none;
-  border-radius: 20px;
+  /* border-radius: 20px; */
+  border-top-right-radius: 1.3rem;
+  border-bottom-right-radius: 1.3rem;
   font-weight: bold;
-  max-width: 150px;
-  min-width: 130px;
+  max-width: 300px;
+  /* min-width: 130px; */
+  /* width: 20%; */
+  letter-spacing: 0.09rem;
   cursor: pointer;
+  transition: all 0.3s linear;
 }
+
+input,
+button {
+  outline: none;
+}
+
 .form-group button:hover {
-  background: #d03448;
-  color: #eee;
+  background: linear-gradient(to left, #e03448, #f08306);
+  color: #333;
+  font-size: 0.9rem;
 }
+
 #f-info {
   display: flex;
   color: #333;

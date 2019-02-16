@@ -5,7 +5,7 @@
   }
 
   #header {
-    font-size: 14px;
+    font-size: 1.5rem;
     line-height: 3em;
   }
 
@@ -45,11 +45,13 @@
   .form-group input {
     margin: 0;
     min-width: 100%;
+    border-radius: 1.3rem;
   }
   .form-group button {
     min-width: 100%;
     margin-top: 3%;
     padding: 15px;
+    border-radius: 1.3rem;
   }
 }
 
