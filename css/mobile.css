@@ -1,5 +1,5 @@
 /* Responsive layout - when the screen is less than 768px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .row {
     flex-direction: column;
   }
@@ -11,6 +11,14 @@
 
   .main {
     padding: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-content: stretch;
+    flex-flow: row wrap;
+  }
+
+  .news {
+    flex: 5;
   }
 
   .news-img {
@@ -24,6 +32,24 @@
     /* margin: auto; */
     display: block;
     margin-bottom: 3%;
+    overflow: hidden;
+  }
+
+  .side-img {
+    width: 100%;
+    padding: 7%;
+    margin: 1% 0%;
+    max-height: auto;
+    opacity: 0;
+    animation: fadeIn ease 1s 2s forwards;
+  }
+
+  .side-img img {
+    border-radius: 50%;
+    max-width: 300px;
+    border: 3px solid #666;
+    margin: auto;
+    display: block;
     overflow: hidden;
   }
 
