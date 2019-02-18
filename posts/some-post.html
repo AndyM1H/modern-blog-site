@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Andy Blog</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 800px)"
+      href="../css/mobile.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="../js/responsiveNavbar.js"></script>
+    <script src="../js/stickyNavbar.js"></script>
+  </head>
+  <body onscroll="makeNavbarOpacity()">
+    <div
+      class="post-header full-screen-image"
+      style="background-image: url(https://source.unsplash.com/1600x900/?city)"
+    >
+      <div class="post-header h-text">
+        <h1>Nisi cillum excepteur tempor culpa incididunt ullamco.</h1>
+      </div>
+    </div>
+    <!-- Navigation Bar -->
+    <div id="navbar" class="post">
+      <a class="active" href="#">Home</a>
+      <a href="#">Hot</a>
+      <a href="#">Projects</a>
+      <a href="#">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="showNavMenu()"
+        ><i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div class="post-content">
+      <h2 class="my-1">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias,
+        quidem?
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolore
+        delectus temporibus natus minima illum suscipit pariatur sapiente
+        laboriosam ullam excepturi voluptates labore incidunt atque odit modi
+        enim hic fuga id, necessitatibus consequuntur mollitia nam error
+        consectetur. Cumque alias amet, voluptate incidunt at earum quisquam
+        ratione quas ad! Sit inventore ut aspernatur laudantium, in amet
+        accusantium et esse minus ab! Aliquid nisi sunt aliquam quae
+        voluptatibus quidem eum eius placeat quaerat possimus! Dicta esse
+        tempora, ipsa velit illum blanditiis omnis quos consequuntur maxime
+        autem, cumque quia sunt. Dolores magnam assumenda, porro voluptatibus
+        sit maxime distinctio repudiandae! Doloremque, autem. Natus ut
+        necessitatibus quas ipsa accusantium error reiciendis voluptatibus
+        soluta adipisci suscipit dolorem quaerat similique minus quisquam eum
+        illo velit sed sunt, consequatur corrupti nihil labore atque? Amet a
+        deserunt, similique quia vero in beatae temporibus expedita quis error
+        harum natus animi exercitationem explicabo itaque tenetur dicta
+        molestiae distinctio? Quasi, repellat laborum!
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ad,
+        officiis ducimus inventore minima consectetur modi et facere asperiores
+        nemo, voluptas veniam tempore? Consectetur iusto quis minus pariatur
+        suscipit aliquam, asperiores officiis laborum quae nam ea libero ad
+        blanditiis atque minima quisquam saepe sequi modi! Repellat sunt est
+        libero hic!
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed recusandae
+        voluptates libero, porro ratione aliquam fuga atque quasi omnis enim.
+      </p>
+      <img
+        class="p-2"
+        src="https://source.unsplash.com/1600x900/?computer,IT"
+        alt=""
+      />
+      <h5 class="p-2 text-center">describe image</h5>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quasi
+        odio laborum quisquam, error esse reprehenderit quidem deserunt
+        obcaecati incidunt iste, at perferendis. Suscipit error magnam libero
+        est itaque facilis deserunt ab sunt sit? Assumenda reiciendis itaque
+        quas accusamus? Quasi pariatur, minus dolore minima ipsa officiis quos
+        at nesciunt qui illo eaque dignissimos quidem officia! Voluptatem
+        voluptatum labore quam, voluptates eaque rerum odio. Nostrum qui
+        cupiditate sed incidunt laborum accusantium ad possimus deserunt unde
+        nesciunt, sequi repellendus inventore voluptas, at excepturi nobis.
+        Neque soluta provident exercitationem perferendis ipsam optio ut.
+      </p>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+      <div data-aos="zoom-in" data-aos-duration="1000">
+        <div id="f-submit">
+          <h2>Подписаться на рассылку новостей</h2>
+          <div class="form-group">
+            <input
+              type="email"
+              id="email"
+              placeholder="Введите ваш Email адрес"
+            />
+            <button type="submit">Отправить</button>
+          </div>
+        </div>
+      </div>
+      <div data-aos="zoom-out" data-aos-duration="1000">
+        <div id="f-info">
+          <div class="f-logo">
+            <h1>Andy Blog</h1>
+          </div>
+          <div class="f-menu">
+            <h2>MENU</h2>
+            <ul>
+              <li>
+                <a href="#"><i class="fas-li fa fa-home"></i>Home</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas-li fa fa-info-circle"></i>About</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas-li fab fa-hotjar"></i>Hot</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas-li fas fa-project-diagram"></i> Projects</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="f-contact">
+            <h2>CONTACT</h2>
+            <ul>
+              <li>
+                <a href="#"
+                  ><i class="fa fa-mobile-alt"></i><span>Phone</span></a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-map-marker-alt"></i>Address</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-at"></i>Email</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
