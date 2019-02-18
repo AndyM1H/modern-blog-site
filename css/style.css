@@ -18,7 +18,80 @@ h3,
 h4 {
   font-family: 'Roboto Slab', serif;
 }
+.my-1 {
+  margin: 10px 0px;
+}
+.my-2 {
+  margin: 20px 0px;
+}
+.my-3 {
+  margin: 30px 0px;
+}
+.py-1 {
+  padding: 10px 0px;
+}
+.py-2 {
+  padding: 20px 0px;
+}
+.py-3 {
+  padding: 30px 0px;
+}
+.p-1 {
+  padding: 0px 10px;
+}
+.p-2 {
+  padding: 0px 20px;
+}
+.p-3 {
+  padding: 0px 30px;
+}
 
+.text-center {
+  text-align: center;
+}
+.full-screen-image {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: rgba(0, 0, 0, 0.4);   */
+  height: 100vh;
+
+  width: 100%;
+  z-index: -1;
+}
+.post-header {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.4);
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  /* margin-top: -58.5px; */
+  z-index: 1;
+}
+.post-header .h-text {
+  color: #fff;
+  height: 110vh;
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+  line-height: 6rem;
+  padding: 3rem;
+}
+.post-content {
+  text-align: justify;
+  padding: 2% 23%;
+  line-height: 2rem;
+}
+
+.post-content img {
+  display: inline-block;
+  margin: auto;
+  width: 100%;
+  margin-top: 15px;
+}
+#navbar.post {
+  display: none;
+}
 .fa {
   text-align: center;
   width: 8%;

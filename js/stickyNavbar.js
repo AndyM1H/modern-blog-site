@@ -9,9 +9,20 @@ function makeNavbarOpacity() {
   var scroll = window.pageYOffset;
 
   // I don't need sticky navbar on Phone
-  if (scroll > 338 && window.innerWidth > 600) {
+  if (!navbar.contains('post'))
+    if (scroll > 338 && window.innerWidth > 600) {
+      navbar.add('sticky');
+    } else if (navbar.contains('sticky')) {
+      navbar.remove('sticky');
+    }
+
+  if (navbar.contains('post') && scroll > screen.height) {
     navbar.add('sticky');
-  } else if (navbar.contains('sticky')) {
+    document.querySelector('.post').style.animation =
+      'fadeIn ease 0.3s 0.1s forwards';
+    // document.querySelector('.post').style.opacity = 1;
+    document.querySelector('.post').style.transform = 'none';
+  } else if (navbar.contains('post') && scroll < screen.height) {
     navbar.remove('sticky');
   }
 }
