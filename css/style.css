@@ -46,10 +46,11 @@ h4 {
 
 /* Header/logo Title */
 #header {
-  background: #fff url('../img/bground.jpg') no-repeat center center/cover;
-  min-height: 25vh;
-  font-size: 32px;
-  color: white;
+  /* background: #fff url('../img/bground.jpg') no-repeat center center/cover; */
+  background: #fff url('https://source.unsplash.com/1600x900/?white,background')
+    no-repeat center center/cover;
+  background-attachment: fixed;
+  min-height: 30vh;
   line-height: 5rem;
   letter-spacing: 0.3rem;
   overflow: hidden;
@@ -58,7 +59,8 @@ h4 {
 }
 
 .logo {
-  min-height: 250px;
+  min-height: 30vh;
+  font-size: 2rem;
   display: flex;
   height: 100%;
   flex-direction: column;
@@ -66,6 +68,7 @@ h4 {
   justify-content: center;
   align-content: center;
   align-items: center;
+  background-color: rgba(100, 100, 100, 0.4);
 }
 .logo h1.animated {
   position: relative;
@@ -85,9 +88,8 @@ h4 {
 #navbar {
   display: flex;
   justify-content: center;
-  background: #e2e2e2;
   position: sticky;
-  top: 0;
+  top: 0px;
   z-index: 1;
   overflow: hidden;
   opacity: 0;
@@ -98,6 +100,8 @@ h4 {
 
 #navbar.sticky {
   display: flex;
+  position: sticky;
+  top: 0;
   background: rgba(0, 0, 0, 0.4);
   transform: scale(2, 3);
   transition: all ease 0.3s;
@@ -189,6 +193,7 @@ hr {
   width: 100%;
   border: 3px solid #666;
   margin: auto;
+  height: 500px;
   display: block;
   overflow: hidden;
 }
