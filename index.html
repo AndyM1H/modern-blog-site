@@ -26,9 +26,10 @@
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
-  <body onscroll="makeNavbarOpacity()">
+
+  <body onscroll="onScroll()">
     <!-- Header -->
-    <div id="header">
+    <div id="header" class="fade-in">
       <div class="logo">
         <h1 class="animated" style="color:#fff">Hi Everyone</h1>
         <p class="animated" style="color:#eee">Welcome To <b>Andy</b> Blog</p>
@@ -36,11 +37,11 @@
     </div>
 
     <!-- Navigation Bar -->
-    <div id="navbar" class="">
-      <a class="active" href="#">Home</a>
-      <a href="#">Hot</a>
-      <a href="#">Projects</a>
-      <a href="#">About</a>
+    <div id="navbar" class="fade-in-left">
+      <a class="active" href="index.html">Home</a>
+      <a href="hot.html">Hot</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
       <a href="javascript:void(0);" class="icon" onclick="showNavMenu()"
         ><i class="fa fa-bars"></i>
       </a>
@@ -52,22 +53,24 @@
       <!-- MAIN -->
       <div class="main">
         <article class="news">
-          <h2>TITLE HEADING</h2>
-          <h5>Title description, Feb 14, 2019</h5>
-          <div class="news-img">
-            <!-- <img src="./img/laptop.jpg" alt="laptop" /> -->
-            <img
-              src="https://source.unsplash.com/1600x900/?IT,computer,programmer,javascript,CSharp,Java,HTML,CSS"
-              alt="laptop"
-            />
-          </div>
-          <p>Some text..</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus
-            fugiat possimus, accusamus nisi itaque ipsam accusantium suscipit!
-            Asperiores nesciunt accusamus, nemo corporis fugit alias quo vero
-            sed tenetur qui incidunt.
-          </p>
+          <a href="./posts/some-post.html" target="_blank">
+            <h2>EXAMPLE POST</h2>
+            <h5>Click on me for open it, Feb 19, 2019</h5>
+            <div class="news-img">
+              <!-- <img src="./img/laptop.jpg" alt="laptop" /> -->
+              <img
+                src="https://source.unsplash.com/1600x900/?IT,computer,programmer,javascript,CSharp,Java,HTML,CSS"
+                alt="laptop"
+              />
+            </div>
+            <p>Some text..</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Temporibus fugiat possimus, accusamus nisi itaque ipsam
+              accusantium suscipit! Asperiores nesciunt accusamus, nemo corporis
+              fugit alias quo vero sed tenetur qui incidunt.
+            </p>
+          </a>
         </article>
 
         <br />
