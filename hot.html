@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Andy Blog</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 800px)"
+      href="css/mobile.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+      .cards {
+        margin: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+
+      .card {
+        flex: 0 1 24%;
+        min-width: 550px;
+        padding: 20px;
+        margin-bottom: 50px;
+        /* border: 0.5px solid #777; */
+        border-radius: 25px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        transition: all ease 0.3s;
+      }
+      .card:hover {
+        transform: scale(1.01, 1.01);
+      }
+
+      .card-img img {
+        width: 100%;
+        max-height: 650px;
+        border-radius: 25px;
+        border: none;
+        margin: auto;
+        display: block;
+        margin-bottom: 3%;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+
+  <body onscroll="onScroll()">
+    <!-- Header -->
+    <div id="header">
+      <div class="logo">
+        <h1 style="color:#fff">Hi Everyone</h1>
+        <p style="color:#eee">Welcome To <b>Andy</b> Blog</p>
+      </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div id="navbar" class="">
+      <a href="index.html">Home</a>
+      <a class="active" href="hot.html">Hot</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="showNavMenu()"
+        ><i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <!-- <hr /> -->
+    <!-- content -->
+
+    <!-- CARDS -->
+    <div class="cards">
+      <article class="card p-3">
+        <h2>TITLE HEADING</h2>
+        <h5>Title description, Feb 14, 2019</h5>
+        <div class="card-img">
+          <img src="https://source.unsplash.com/1600x900/?Books" alt="Me" />
+        </div>
+        <p>Some text..</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus
+          fugiat possimus, accusamus nisi itaque ipsam accusantium suscipit!
+          Asperiores nesciunt accusamus, nemo corporis fugit alias quo vero sed
+          tenetur qui incidunt.
+        </p>
+      </article>
+
+      <br />
+      <!-- <div
+          data-aos="fade-up"
+          data-aos-duration="700"
+          data-aos-anchor-placement="top-bottom"
+        > -->
+      <article class="card">
+        <h2>TITLE HEADING</h2>
+        <h5>Title description, Feb 14, 2019</h5>
+        <div class="card-img">
+          <img
+            src="https://source.unsplash.com/1600x900/?HTML,CSS"
+            alt="laptop"
+          />
+        </div>
+        <p>Lorem ipsum dolor sit.</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae!
+        </p>
+      </article>
+      <!-- </div> -->
+      <br />
+
+      <!-- <div
+          data-aos="fade-up"
+          data-aos-duration="700"
+          data-aos-anchor-placement="top-bottom"
+        > -->
+      <article class="card">
+        <h2>TITLE HEADING</h2>
+        <h5>Title description, Feb 14, 2019</h5>
+        <div class="card-img">
+          <img
+            src="https://source.unsplash.com/1600x900/?Nature,Web"
+            alt="laptop"
+          />
+        </div>
+        <p>Some text..</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+          provident tempora ad. Sunt itaque consequatur porro id aperiam sed
+          explicabo? Odit optio accusamus itaque eaque voluptas non impedit
+          reiciendis! Explicabo sit minima a modi quas laudantium rem quod
+          rerum? Maxime perferendis cum autem adipisci quo. Quia quisquam non
+          dignissimos obcaecati?
+        </p>
+      </article>
+      <!-- </div> -->
+      <br />
+      <!-- <div
+          data-aos="fade-up"
+          data-aos-duration="700"
+          data-aos-anchor-placement="top-bottom"
+        > -->
+      <article class="card">
+        <h2>TITLE HEADING</h2>
+        <h5>Title description, Feb 14, 2019</h5>
+        <div class="card-img">
+          <img
+            src="https://source.unsplash.com/1600x900/?IT,computer"
+            alt="laptop"
+          />
+        </div>
+        <p>Some text..</p>
+        <p>
+          Sunt in culpa qui officia deserunt mollit anim id est laborum
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco.
+        </p>
+      </article>
+      <!-- </div> -->
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+      <div data-aos="zoom-in" data-aos-duration="1000">
+        <div id="f-submit">
+          <h2>Подписаться на рассылку новостей</h2>
+          <div class="form-group">
+            <input
+              type="email"
+              id="email"
+              placeholder="Введите ваш Email адрес"
+            />
+            <button type="submit">Отправить</button>
+          </div>
+        </div>
+      </div>
+      <div data-aos="zoom-out" data-aos-duration="1000">
+        <div id="f-info">
+          <div class="f-logo">
+            <h1>Andy Blog</h1>
+          </div>
+          <div class="f-menu">
+            <h2>MENU</h2>
+            <ul>
+              <li>
+                <a href="#"><i class="fas-li fa fa-home"></i>Home</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas-li fa fa-info-circle"></i>About</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas-li fab fa-hotjar"></i>Hot</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas-li fas fa-project-diagram"></i> Projects</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="f-contact">
+            <h2>CONTACT</h2>
+            <ul>
+              <li>
+                <a href="#"
+                  ><i class="fa fa-mobile-alt"></i><span>Phone</span></a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-map-marker-alt"></i>Address</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-at"></i>Email</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/responsiveNavbar.js"></script>
+    <script src="./js/stickyNavbar.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
