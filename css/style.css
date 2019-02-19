@@ -45,6 +45,13 @@ h4 {
 .p-3 {
   padding: 0px 30px;
 }
+.l-heading {
+  font-size: 1.5rem;
+  color: rgb(182, 255, 13);
+}
+.fade-in {
+  animation: fadeIn ease 2s 0s forwards;
+}
 
 .text-center {
   text-align: center;
@@ -117,32 +124,63 @@ h4 {
   font-size: 18px;
 }
 
+.up_down_btn {
+  position: fixed;
+  bottom: 80px;
+  right: 40px;
+  z-index: 9999;
+  width: 300px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background: #f5f5f5;
+  color: #444;
+  cursor: pointer;
+  border-radius: 2px;
+  display: none;
+}
+
+.up_down_btn:hover {
+  text-decoration: none;
+  background: #e9ebec;
+}
+
+.up_down_btn-show {
+  display: block;
+}
+
+.up_down_btn-disabled {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0;
+}
+
 /* Header/logo Title */
 #header {
   /* background: #fff url('../img/bground.jpg') no-repeat center center/cover; */
-  background: #fff url('https://source.unsplash.com/1600x900/?white,background')
-    no-repeat center center/cover;
+  background: #fff
+    url('https://source.unsplash.com/1600x900/?nature,background') no-repeat
+    center center/cover;
   background-attachment: fixed;
   /* min-height: 30vh; */
-  height: 35vh;
+  height: 30vh;
   line-height: 5rem;
   letter-spacing: 0.3rem;
   overflow: hidden;
   top: 0;
-  animation: fadeIn ease 1s 0.7s forwards;
 }
 
 .logo {
-  min-height: 30vh;
+  /* min-height: 30vh; */
   font-size: 2rem;
   display: flex;
-  height: 100%;
+  height: 80%;
   flex-direction: column;
-  text-align: center;
+  /* padding-top: 35px; */
   justify-content: center;
   align-content: center;
   align-items: center;
-  background-color: rgba(100, 100, 100, 0.4);
+  background-color: rgba(50, 50, 50, 0.2);
 }
 .logo h1.animated {
   position: relative;
@@ -157,45 +195,51 @@ h4 {
   /* right: -3000px; */
   animation: shiftRight ease 1.4s forwards;
 }
-
+.fade-in-left {
+  opacity: 0;
+  animation: fadeInLeft ease 1s 0.5s forwards;
+}
 /* Style the top navigation bar */
 #navbar {
   display: flex;
   justify-content: center;
   position: relative;
-  top: -60px;
+  margin-top: -58px;
   z-index: 1;
   background: rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  opacity: 0;
-  animation: fadeInLeft ease 1s 0.5s forwards;
   animation-iteration-count: 1;
   transition: background ease 0.3s;
 }
 
-#navbar.sticky {
+#navbar.sticky,
+#navbar-home.sticky {
   display: flex;
   position: sticky;
   top: 0;
   background: rgba(0, 0, 0, 0.4);
-  transform: scale(2, 3);
+  /* transform: scale(2, 3); */
   transition: all ease 0.3s;
 }
-#navbar.sticky a {
+#navbar.sticky a,
+#navbar-home.sticky a {
   color: #ddd;
   border-radius: 50%;
   transform: scale(0.7, 0.9);
 }
-#navbar.sticky a.active {
+#navbar.sticky a.active,
+#navbar-home.sticky a.active {
   color: #fff;
   border-radius: 50%;
 }
-#navbar.sticky a:hover {
+#navbar.sticky a:hover,
+#navbar-home.sticky a:hover {
   color: #111;
 }
 
 /* Style the navigation bar links */
-#navbar a {
+#navbar a,
+#navbar-home a {
   font-size: 24px;
   color: #eee;
   padding: 14px 20px;
@@ -204,18 +248,21 @@ h4 {
   transition: 0.3s all ease;
 }
 
-#navbar a.active {
+#navbar a.active,
+#navbar-home a.active {
   color: #fff;
   border-bottom: 2px solid #fff;
 }
 
 /* Change color on hover */
-#navbar a:hover {
+#navbar a:hover,
+#navbar-home a:hover {
   background-color: #f1f1f1;
   color: #111;
 }
 
-#navbar .icon {
+#navbar .icon,
+#navbar-home .icon {
   display: none;
 }
 
@@ -304,10 +351,17 @@ hr {
   max-height: 650px;
   border: none;
   /* margin: auto; */
+  margin-bottom: 10px;
   display: block;
   overflow: hidden;
 }
-
+.news a {
+  text-decoration: none;
+  color: #111;
+}
+.news a:visited {
+  color: #777;
+}
 .news h2 {
   font-size: 34px;
 }
@@ -316,6 +370,85 @@ hr {
   color: #aaa;
   font-size: 0.8rem;
   margin: 15px;
+}
+
+/* Slider */
+#slider {
+  max-width: 900px;
+  height: 500px;
+  position: relative;
+  margin: 0 auto;
+  /* border: 1px solid black; */
+  border-radius: 5%;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.btn-github {
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 25px;
+  border-radius: 0.5rem;
+  padding: 10px;
+  color: #fff;
+  background: #333;
+}
+
+.btn-github a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+.btn-github a:visited {
+  color: #eee;
+}
+
+#slider .project-caption {
+  height: 100%;
+  width: 100%;
+  border-radius: 5%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+#slider .project-caption h1 {
+  color: #f2f2f2;
+  width: 100%;
+  font-size: 2.5rem;
+  padding: 25px 30px;
+  position: absolute;
+  top: 0;
+}
+
+#slider .project-caption h3 {
+  color: #f2f2f2;
+  font-size: 1.5rem;
+  padding: 0px 60px;
+  position: absolute;
+  bottom: 25px;
+  /* padding-bottom: 50px; */
+  width: 100%;
+  text-align: center;
+}
+
+#slider:hover {
+  transform: scale(1.005, 1.005);
+  box-shadow: 0 0 10px #111;
+}
+
+.project-img {
+  background: #fff
+    url('https://source.unsplash.com/900x500/?IT,computer,programmer,javascript,CSharp,Java,HTML,CSS')
+    no-repeat center center/cover;
+  border-radius: 5%;
+  width: 900px;
+  height: 500px;
+}
+
+.project-img img {
+  border-radius: 5%;
+  z-index: -13;
 }
 
 /* Footer */

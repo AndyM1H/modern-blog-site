@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Andy Blog</title>
+    <title>Andy Blog | Some post</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -27,8 +27,11 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="../js/responsiveNavbar.js"></script>
     <script src="../js/stickyNavbar.js"></script>
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <script src="../js/btnUp.js"></script>
   </head>
-  <body onscroll="makeNavbarOpacity()">
+
+  <body onscroll="onScroll()">
     <div
       class="post-header full-screen-image"
       style="background-image: url(https://source.unsplash.com/1600x900/?city)"
@@ -37,17 +40,18 @@
         <h1>Nisi cillum excepteur tempor culpa incididunt ullamco.</h1>
       </div>
     </div>
+
     <!-- Navigation Bar -->
     <div id="navbar" class="post">
-      <a class="active" href="#">Home</a>
-      <a href="#">Hot</a>
-      <a href="#">Projects</a>
-      <a href="#">About</a>
+      <a href="../index.html">Home</a>
+      <a href="../hot.html">Hot</a>
+      <a href="../projects.html">Projects</a>
+      <a href="../about.html">About</a>
       <a href="javascript:void(0);" class="icon" onclick="showNavMenu()"
         ><i class="fa fa-bars"></i>
       </a>
     </div>
-
+    <a class="up_down_btn" title="Наверх">&uarr;</a>
     <div class="post-content">
       <h2 class="my-1">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias,
