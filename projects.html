@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Andy Blog</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 800px)"
+      href="css/mobile.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      .prev {
+        left: 0;
+      }
+
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      .fade-in {
+        animation: fadeIn ease 2s 0s forwards;
+      }
+      .main {
+        padding: 50px;
+      }
+      .fadeInLeft {
+        animation: fadeInLeft ease 0.5s 0s forwards;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .prev,
+        .next,
+        .project-caption {
+          font-size: 11px;
+        }
+      }
+    </style>
+  </head>
+
+  <body onscroll="onScroll()">
+    <!-- Header -->
+    <div id="header">
+      <div class="logo">
+        <h1 style="color:#fff">Hi Everyone</h1>
+        <p style="color:#eee">Welcome To <b>Andy</b> Blog</p>
+      </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div id="navbar" class="">
+      <a href="index.html">Home</a>
+      <a href="hot.html">Hot</a>
+      <a class="active" href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="showNavMenu()"
+        ><i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <!-- <hr /> -->
+    <!-- content -->
+
+    <div class="row">
+      <!-- MAIN -->
+      <div class="main my-3  p-3">
+        <div id="slider">
+          <div class="projects fade-in">
+            <div
+              class="project-img"
+              style="background: #fff
+            url('https://source.unsplash.com/900x500/?C#,entrants,forms')
+            no-repeat center center/cover;"
+            >
+              <div class="project-caption">
+                <h1>Appeals of entrants</h1>
+                <h3>
+                  <span class="l-heading">C# Project.</span><br />
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Debitis, laborum!
+                </h3>
+                <br />
+                <button class="btn-github my-1">
+                  <i class="fab fa-github"></i>
+                  <a
+                    href="https://github.com/AndyM1H/appeals-of-entrants"
+                    target="_blank"
+                    >Go To GitHub</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- End project -->
+          <div class="projects fade-in">
+            <div
+              class="project-img"
+              style="background: #fff
+            url('https://source.unsplash.com/900x500/?HTML,CSS,JS')
+            no-repeat center center/cover;"
+            >
+              <div class="project-caption">
+                <h1>Tic Tac Toe</h1>
+                <h3>
+                  <span class="l-heading">HTML&CSS&JavaScript Project.</span
+                  ><br />
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </h3>
+                <br />
+                <button class="btn-github my-1">
+                  <i class="fab fa-github"></i>
+                  <a
+                    href="https://github.com/AndyM1H/tic-tac-toe-js"
+                    target="_blank"
+                    >Go To GitHub</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- End project -->
+          <div class="projects fade-in">
+            <div
+              class="project-img"
+              style="background: #fff
+            url('https://source.unsplash.com/900x500/?NodeJs')
+            no-repeat center center/cover;"
+            >
+              <div class="project-caption">
+                <h1>KalachTech Schedule</h1>
+                <h3>
+                  <span class="l-heading">NodeJS Project.</span><br />
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                  reiciendis dolorem dicta.
+                </h3>
+                <br />
+                <button class="btn-github my-1">
+                  <i class="fab fa-github"></i>
+                  <a
+                    href="https://github.com/AndyM1H/kalachteh-schedule"
+                    target="_blank"
+                    >Go To GitHub</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- End project -->
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <!-- </Slider> -->
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+      <div data-aos="zoom-in" data-aos-duration="1000">
+        <div id="f-submit">
+          <h2>Подписаться на рассылку новостей</h2>
+          <div class="form-group">
+            <input
+              type="email"
+              id="email"
+              placeholder="Введите ваш Email адрес"
+            />
+            <button type="submit">Отправить</button>
+          </div>
+        </div>
+      </div>
+      <div data-aos="zoom-out" data-aos-duration="1000">
+        <div id="f-info">
+          <div class="f-logo">
+            <h1>Andy Blog</h1>
+          </div>
+          <div class="f-menu">
+            <h2>MENU</h2>
+            <ul>
+              <li>
+                <a href="#"><i class="fas-li fa fa-home"></i>Home</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas-li fa fa-info-circle"></i>About</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas-li fab fa-hotjar"></i>Hot</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas-li fas fa-project-diagram"></i> Projects</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="f-contact">
+            <h2>CONTACT</h2>
+            <ul>
+              <li>
+                <a href="#"
+                  ><i class="fa fa-mobile-alt"></i><span>Phone</span></a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-map-marker-alt"></i>Address</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-at"></i>Email</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName('projects');
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = 'none';
+        }
+        slides[slideIndex - 1].style.display = 'block';
+      }
+    </script>
+    <script src="./js/responsiveNavbar.js"></script>
+    <script src="./js/stickyNavbar.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
