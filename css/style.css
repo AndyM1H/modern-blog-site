@@ -6,7 +6,7 @@
 
 /* Style the body */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.2rem;
   line-height: 1.8em;
   overflow-x: hidden;
@@ -16,7 +16,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
 }
 .my-1 {
   margin: 10px 0px;
@@ -159,11 +159,11 @@ h4 {
 #header {
   /* background: #fff url('../img/bground.jpg') no-repeat center center/cover; */
   background: #fff
-    url('https://source.unsplash.com/1600x900/?nature,background') no-repeat
+    url("https://source.unsplash.com/1600x900/?nature,background") no-repeat
     center center/cover;
   background-attachment: fixed;
   /* min-height: 30vh; */
-  height: 30vh;
+  height: 290px;
   line-height: 5rem;
   letter-spacing: 0.3rem;
   overflow: hidden;
@@ -439,7 +439,7 @@ hr {
 
 .project-img {
   background: #fff
-    url('https://source.unsplash.com/900x500/?IT,computer,programmer,javascript,CSharp,Java,HTML,CSS')
+    url("https://source.unsplash.com/900x500/?IT,computer,programmer,javascript,CSharp,Java,HTML,CSS")
     no-repeat center center/cover;
   border-radius: 5%;
   width: 900px;
