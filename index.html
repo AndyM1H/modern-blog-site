@@ -13,6 +13,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/dark.css" />
     <link
       rel="stylesheet"
       media="screen and (max-width: 800px)"
@@ -25,6 +26,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
   </head>
 
   <body onscroll="onScroll()">
@@ -37,11 +39,14 @@
     </div>
 
     <!-- Navigation Bar -->
-    <div id="navbar" class="fade-in-left">
-      <a class="active" href="index.html">Home</a>
-      <a href="hot.html">Hot</a>
-      <a href="projects.html">Projects</a>
-      <a href="about.html">About</a>
+    <div id="navbar" class="fade-in">
+      <a class="active fade-in-left" href="index.html">Home</a>
+      <a class="fade-in-left" href="hot.html">Hot</a>
+      <a class="fade-in-left" href="projects.html">Projects</a>
+      <a class="fade-in-left" href="about.html">About</a>
+      <a class="fade-in-left" id="theme" style="cursor:pointer;"
+        >Change Theme</a
+      >
       <a href="javascript:void(0);" class="icon" onclick="showNavMenu()"
         ><i class="fa fa-bars"></i>
       </a>
@@ -51,6 +56,7 @@
 
     <div class="row">
       <!-- MAIN -->
+
       <div class="main">
         <article class="news">
           <a href="./posts/some-post.html" target="_blank">
@@ -247,6 +253,7 @@
     <script src="./js/responsiveNavbar.js"></script>
     <script src="./js/stickyNavbar.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./js/changeTheme.js"></script>
     <script>
       AOS.init();
     </script>
