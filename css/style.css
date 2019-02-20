@@ -197,7 +197,7 @@ h4 {
 }
 .fade-in-left {
   opacity: 0;
-  animation: fadeInLeft ease 1s 0.5s forwards;
+  animation: fadeInLeft ease 1.4s 0.3s forwards;
 }
 /* Style the top navigation bar */
 #navbar {
@@ -208,8 +208,7 @@ h4 {
   z-index: 1;
   background: rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  animation-iteration-count: 1;
-  transition: background ease 0.3s;
+  /* transition: background ease 0s; */
 }
 
 #navbar.sticky,
@@ -592,7 +591,7 @@ matrix() */
 @keyframes fadeInLeft {
   from {
     opacity: 0;
-    transform: translateX(1000px);
+    transform: translateY(-1000px);
   }
   to {
     opacity: 1;
