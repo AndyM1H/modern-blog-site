@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Andy Blog</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css//preloader.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 800px)"
+      href="css/mobile.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <script src="./js/preloader.js"></script>
+    <style>
+      #about {
+        margin: 0 auto;
+        padding: 3rem 10rem;
+      }
+      #about .about-photo {
+        background: #fff;
+        width: 500px;
+        height: 500px;
+        padding: 0;
+        margin: 0 auto;
+        max-height: auto;
+        margin-bottom: 5rem;
+      }
+      #about .about-photo img {
+        border-radius: 50%;
+        width: 100%;
+        border: 3px solid #666;
+        margin: auto;
+        max-height: 100%;
+        display: block;
+        overflow: hidden;
+      }
+      #about .about-photo .name {
+        font-size: 3rem;
+        display: flex;
+        justify-content: center;
+        padding: 25px;
+        color: rgb(90, 90, 90);
+      }
+
+      .contact {
+        width: 50%;
+        padding: 3rem 0rem;
+      }
+      /* Style inputs with type="text", select elements and textareas */
+      input[type='text'],
+      select,
+      textarea {
+        width: 100%; /* Full width */
+        padding: 12px; /* Some padding */
+        border: 1px solid #ccc; /* Gray border */
+        border-radius: 5px; /* Rounded borders */
+        margin-top: 6px; /* Add a top margin */
+        margin-bottom: 16px; /* Bottom margin */
+        resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+      }
+      input:focus::placeholder {
+        color: #999;
+        text-indent: -100px;
+        transition: 0.3s;
+      }
+
+      /* Style the submit button with a specific background color etc */
+      input[type='submit'] {
+        background-color: #4caf50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      /* When moving the mouse over the submit button, add a darker green color */
+      input[type='submit']:hover {
+        background-color: #45a049;
+      }
+
+      /* Add a background color and some padding around the form */
+      .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+
+      .social {
+        padding: 15px;
+        margin-right: 3rem;
+        display: flex;
+        justify-content: center;
+      }
+      /* Wrapper */
+      .icon-button {
+        background-color: #fff;
+        border-radius: 3.6rem;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 2rem;
+        height: 3.6rem;
+        line-height: 3.6rem;
+        margin: 0 5px;
+        position: relative;
+        text-align: center;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        width: 3.6rem;
+      }
+      .btn-contact-us {
+        padding: 15px;
+        border: none;
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: bold;
+        background-color: #bbb;
+        border-radius: 1rem;
+        cursor: pointer;
+        margin-bottom: 25px;
+      }
+
+      /* Circle */
+      .icon-button span {
+        border-radius: 0;
+        display: block;
+        height: 0;
+        left: 50%;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        width: 0;
+      }
+      .icon-button:hover span {
+        width: 3.6rem;
+        height: 3.6rem;
+        border-radius: 3.6rem;
+        margin: -1.8rem;
+      }
+      .vk span {
+        background-color: #4a76a8;
+      }
+      .google-plus span {
+        background-color: #db5a3c;
+      }
+
+      /* Icons */
+      .icon-button i {
+        background: none;
+        color: white;
+        height: 3.6rem;
+        left: 0;
+        line-height: 3.6rem;
+        position: absolute;
+        top: 0;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        width: 3.6rem;
+        z-index: 10;
+      }
+      .icon-button .icon-vk {
+        color: #4a76a8;
+      }
+      .icon-button .icon-google-plus {
+        color: #db5a3c;
+      }
+      .icon-google-plus,
+      .icon-vk {
+        font-size: 2rem;
+      }
+      .icon-button:hover .icon-vk,
+      .icon-button:hover .icon-google-plus {
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body onscroll="onScroll()">
+    <!-- PRELOADER -->
+    <div id="cube-loader">
+      <div class="caption">
+        <div class="cube-loader">
+          <div class="cube loader-1"></div>
+          <div class="cube loader-2"></div>
+          <div class="cube loader-4"></div>
+          <div class="cube loader-3"></div>
+        </div>
+      </div>
+    </div>
+    <!-- END PRELOADER -->
+    <!-- Header -->
+    <div
+      id="header"
+      style="background-image: url(https://source.unsplash.com/300x500/weekly?header)"
+    >
+      <div class="logo">
+        <h1 style="color:#fff">Hi Everyone</h1>
+        <p style="color:#eee">Welcome To <b>Andy</b> Blog</p>
+      </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div id="navbar" class="">
+      <a href="index.html">Home</a>
+      <a href="hot.html">Hot</a>
+      <a href="projects.html">Projects</a>
+      <a class="active" href="about.html">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="showNavMenu()"
+        ><i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <!-- <hr /> -->
+    <!-- content -->
+
+    <div class="row">
+      <div id="about">
+        <div class="about-photo">
+          <img
+            src="https://source.unsplash.com/500x500/weekly?man"
+            alt="photo-of-me"
+          />
+          <div class="name">Andrew Mihin</div>
+        </div>
+        <div class="description">
+          <h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, quos?
+          </h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui
+            tempora debitis vitae nostrum commodi. Ab, amet officiis deleniti
+            obcaecati impedit possimus, harum nemo excepturi nam sapiente
+            commodi maiores nulla nihil. Ullam est iste dicta inventore nostrum
+            voluptatibus repellat omnis rerum!
+          </p>
+        </div>
+        <div class="contact">
+          <button onclick="showContactForm()" class="btn-contact-us">
+            Написать мне
+          </button>
+          <div class="contact-form" id="contact-form" style="display: none;">
+            <form>
+              <label for="fname">First Name</label>
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Your name.."
+              />
+
+              <label for="lname">Last Name</label>
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Your last name.."
+              />
+
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Russia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+
+              <label for="subject">Subject</label>
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Write something.."
+                style="height:200px"
+              ></textarea>
+
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
+        <div class="social">
+          <a href="https://vk.com/4n2r3w" class="icon-button vk"
+            ><i class="icon-vk fab fa-vk"></i><span></span
+          ></a>
+          <a
+            href="https://plus.google.com/u/0/102257369706815085680"
+            class="icon-button google-plus"
+            ><i class="icon-google-plus fab fa-google-plus-g"></i><span></span
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+      <div data-aos="zoom-in" data-aos-duration="1000">
+        <div id="f-submit">
+          <h2>Подписаться на рассылку новостей</h2>
+          <div class="form-group">
+            <input
+              type="email"
+              id="email"
+              placeholder="Введите ваш Email адрес"
+            />
+            <button type="submit">Отправить</button>
+          </div>
+        </div>
+      </div>
+      <div data-aos="zoom-out" data-aos-duration="1000">
+        <div id="f-info">
+          <div class="f-logo">
+            <h1>Andy Blog</h1>
+          </div>
+          <div class="f-menu">
+            <h2>MENU</h2>
+            <ul>
+              <li>
+                <a href="#"><i class="fas-li fa fa-home"></i>Home</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas-li fa fa-info-circle"></i>About</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas-li fab fa-hotjar"></i>Hot</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas-li fas fa-project-diagram"></i> Projects</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="f-contact">
+            <h2>CONTACT</h2>
+            <ul>
+              <li>
+                <a href="#"
+                  ><i class="fa fa-mobile-alt"></i><span>Phone</span></a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-map-marker-alt"></i>Address</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-at"></i>Email</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/responsiveNavbar.js"></script>
+    <script src="./js/stickyNavbar.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      function showContactForm() {
+        var contactUs = document.getElementById('contact-form');
+        if (contactUs.style.display === 'none') {
+          contactUs.style.display = 'block';
+          contactUs.classList.add('fade-in');
+        } else {
+          contactUs.style.display = 'none';
+        }
+      }
+    </script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
